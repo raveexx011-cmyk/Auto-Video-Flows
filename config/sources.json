@@ -86,3 +86,5 @@
     "font_hint": "DejaVuSans (preinstalled on GitHub Ubuntu runners)"
   }
 }
+
+"auto_upload": false

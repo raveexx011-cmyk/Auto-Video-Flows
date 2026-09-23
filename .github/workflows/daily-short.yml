@@ -60,7 +60,7 @@ jobs:
           if [ -n "${{ inputs.topic_index }}" ]; then
             TOPIC_ARG="--topic-index ${{ inputs.topic_index }}"
           fi
-          python scripts/generate_script_ai.py $TOPIC_ARG
+          python scripts/generate_script_ai.py $TOPIC_ARG --model llama-3.1-8b-instant
 
       # ── Stage 1.5: fact-check the AI-written narration before anything else uses it ─
       # generate_script_ai.py's prompt asks GPT-4o-mini for "real details (years,
